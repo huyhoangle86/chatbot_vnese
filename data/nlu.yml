@@ -1,0 +1,361 @@
+version: "2.0"
+
+nlu:
+- intent: application_doc
+  examples: |
+    - Ứng tuyển cần những giấy tờ gì?
+    - Hồ sơ ứng tuyển bao gồm những gì?
+    - Ứng tuyển cần những loại giấy tờ nào?
+    - Cần chuẩn bị gì để ứng tuyển?
+    - Chuẩn bị hồ sơ thế nào để ứng tuyển?
+    - Em muốn ứng tuyển vào vị trí [lắp ráp ô tô](job_position), cần chuẩn bị gì ạ?
+    - Ứng tuyển vào vị trí [nhân viên dệt](job_position) cần những gì
+    - Ứng tuyển vào [kỹ sư xây dựng](job_position) giấy tờ nào?
+
+- intent: application_doc_missing
+  examples: |
+    - Nếu thiếu giấy [Jitco](document_type) thì làm thế nào ?
+    - thiếu [giấy chứng nhận](document_type) thì làm sao ?
+    - thiếu [chứng chỉ](document_type) em nên làm gì?
+    - thiếu [giấy chứng nhận tư cách lao động](document_type) em nên làm gì?
+    - chuyện gì xảy ra nếu thiếu [giấy chứng nhận](document_type)?
+    - Thiếu [Jitco](document_type) phải làm sao đây?
+    - Tôi bị thiếu [chứng chỉ](document_type), cần giúp đỡ
+    - Em bị thiếu [chứng chỉ](document_type), giúp em với ạ
+
+- intent: bot_challenge
+  examples: |
+    - bạn là ai?
+    - ai thế?
+    - bạn là bot hả?
+    - bạn là gì?
+    - bạn là người máy à?
+    - bạn phải người không
+
+- intent: bounty
+  examples: |
+    - Thưởng thế nào ạ?
+    - Cụ thể thưởng bao nhiêu?
+    - Thưởng nhiều không
+    - thưởng nhiêu ko?
+    - tiền thưởng như nào?
+    - chế độ thưởng ra sao
+    - thưởng nhiêu ko?
+    - tiền thưởng như nào?
+    - chế độ thưởng ra sao
+
+- intent: bounty_yn
+  examples: |
+    - Có thưởng không
+    - Vị trí này có thưởng không?
+    - Có thưởng ko anh
+    - Việc này có thưởng không
+    - Có bouns ko?
+    - công ty có thưởng ko anh?
+
+- intent: can_I_upgrade_visa
+  examples: |
+    - Công việc của em có lên được đặc định không? Nếu không lên được thì làm thế nào?
+    - Tôi có thể lên đặc định được ko?
+    - Em có lên đặc định được không?
+    - Công việc này có lên được kỹ năng đặc định không
+    - Việc này có lên tokutei gino được ko?
+    - Tôi có được lên tokutei không
+    - Em lên được tokutei không nhỉ?
+    - Em muốn lên đặc định, phải làm sao?
+    - Em muốn lên tokutei, phải làm sao?
+
+- intent: certificate_missing
+  examples: |
+    - Các đơn nợ chứng chỉ thì làm sao ra được visa ạ?
+    - Nợ chứng chỉ thì làm sao ra visa được ạ?
+    - Nợ chứng chỉ có ra visa được ko?
+    - nợ giấy chứng nhận có ra visa đc ko?
+    - Các đơn nợ chứng chỉ thì sao ra đc visa ạ?
+    - đơn hàng nợ chứng chỉ có ra được visa ?
+    - đơn hàng nợ chứng chỉ làm sao ra visa?
+
+- intent: company_change
+  examples: |
+    - Em đang là tokutei gino có chuyển cty được không? thủ tục chuyển như thế nào?
+    - Visa đặc định có chuyển công ty được hay không ?
+    - đặc định chuyển công ty được không ?
+    - Tokutei chuyển được công ty không anh?
+    - Em có tokutei gino có chuyển cty được không nhỉ?
+    - Em là đặc định muốn chuyển cty có được không?
+    - Thủ tục chuyển công ty như nào? em đang là tokutei gino
+    - Thủ tục chuyển công ty ra sao? em đang là đặc định
+
+- intent: dont_receive_intern_certificate
+  examples: |
+    - Em không nhận được giấy chứng nhận hoàn thành thực tập
+    - Em vẫn chưa nhận được giấy chứng nhận thực tập
+    - Em không nhận được giấy chứng nhận, nên làm gì ạ?
+
+- intent: fellow
+  examples: |
+    - Có senpai người Việt chưa?
+    - Có đồng nghiệp Việt nam không?
+    - Có thể trao đổi với senpai không?
+    - Có senpai Việt làm ở đó chưa?
+    - Có nhiều senpai Việt ở đó ko?
+    - Em muốn trao đổi với senpai đc ko?
+    - Đồng nghiệp Việt nhiều không?
+    - Đồng nghiệp Việt đông không?
+    - Senpai Việt đông không?
+
+- intent: get_certificate
+  examples: |
+    - Em chưa có chứng chỉ tay nghề thì làm thế nào?
+    - thi chứng chỉ hành nghề thế nào?
+    - Làm sao có chứng chỉ hành nghề?
+    - Thi chứng chỉ tay nghề ở đâu?
+    - Thi chứng chỉ thế nào?
+
+- intent: goodbye
+  examples: |
+    - bye
+    - tạm biệt
+    - bye bye
+    - hẹn gặp lại
+    - gặp lại sau
+    - see you later
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - xin chào
+    - chào bạn
+    - xin chào bạn
+    - chào buổi sáng
+    - hi em
+    - chào ông
+    - hi bot
+
+- intent: house_move_fee_support
+  examples: |
+    - Khi đỗ phỏng vấn công ty có hỗ trợ phí chuyển nhà không?
+    - công ty có hỗ trợ phí chuyển nhà không
+    - Có được hỗ trợ phí chuyển nhà không?
+    - pass phỏng vấn có hỗ trợ phí chuyển nhà ko?
+    - được hỗ trợ chuyển nhà ko
+    - Không biết có được hỗ trợ phí chuyển nhà không :(
+    - Được hỗ trợ phí chuyển chỗ ở thì tốt quá
+
+- intent: house_near_company
+  examples: |
+    - Nhà có gần chỗ làm việc không?
+    - Chỗ ở cách chỗ làm bao xa
+    - Chỗ làm việc cách nhà xa không?
+    - Công ty cách nhà bao xa?
+    - Xí nghiệp cách xa nhà không anh?
+    - Xí nghiệp cách nhà bao xa?
+    - Chỗ làm xa nhà không?
+    - Nơi ở có gần công ty ko?
+    - Nơi ở có gần cty ko anh?
+
+- intent: house_price
+  examples: |
+    - Nhà thuê bao nhiêu một tháng
+    - Tiền nhà bao nhiêu?
+    - Tiền nhà khoảng bao nhiêu ạ?
+    - Tiền thuê nhà bao nhiêu anh?
+    - Thuê nhà có đắt không anh?
+    - Tiền thuê nhà cỡ nhiêu
+    - Thuê nhà nhiêu tiền
+    - Nhà ở nhiêu tiền
+    - Chỗ ở thuê bao nhiêu.
+
+- intent: house_rent
+  examples: |
+    - Nhà ở kiểu gì? Ở mấy người?
+    - Nhà ở như thế nào?
+    - Chỗ ở như thế nào?
+    - Bao nhiêu người ở chung?
+    - Ở mấy người
+    - Chỗ ở như nào ạ
+    - Còn chỗ ở thì sao?
+    - Nhà ở theo kiểu gì, bao nhiêu người
+    - Cho em hỏi về nhà ở thì sao ạ?
+    - Bao nhiêu người ở một phòng?
+
+- intent: industry_change
+  examples: |
+    - Em đang ngành [xây dựng](job_type) muốn chuyển sang ngành [cơ khí](job_type), tư vấn giúp em
+    - Em muốn chuyển sang ngành [dệt](job_type), giúp em với ạ
+    - Em cần chuyển ngành ạ
+    - Em muốn chuyển từ [dệt may](job_type) sang (cơ khí)[job_type]
+    - Chuyển ngành cần chuẩn bị gì ạ
+    - Tư vấn chuyển ngành giúp em ạ
+    - Chuyển ngành có cần chứng chỉ không
+    - Em muốn chuyển ngành được ko
+
+- intent: interview_pass
+  examples: |
+    - Đỗ phỏng vấn xong cần nộp bản gốc của các giấy tờ nào
+    - Đỗ phỏng vấn xong thì phải làm sao ?
+    - Đỗ phỏng vấn làm gì tiếp theo?
+    - Đậu thì cần chuẩn bị gì ạ?
+    - Pass PV rồi thì cần làm gì ?
+    - Đậu phỏng vấn thì chuẩn bị gì?
+    - pass phỏng vấn thì làm gì tiếp
+    - PV ok rồi thì sao
+    - PV đậu rồi thì nộp những giấy tờ gì
+
+- intent: interview_process
+  examples: |
+    - Phỏng vấn mấy vòng?
+    - Quy trình phỏng vấn ra sao?
+    - Phỏng vấn như thế nào
+    - PV bao gồm mấy vòng ạ?
+    - Phỏng vấn gồm những vòng nào chị?
+    - Quy trình PV?
+    - pv mấy vòng
+    - phỏng vấn có những vòng nào nhỉ?
+    - PV nhiều vòng không
+    - interview bao nhiêu vòng ha
+
+- intent: interview_schedule
+  examples: |
+    - Có được hẹn lịch phỏng vấn phù hợp với bản thân không ?
+    - Có hẹn lịch phỏng vấn được ko?
+    - Hẹn lịch PV được ko?
+    - Có hẹn trước buổi PV được không?
+    - Đặt trước lịch phỏng vấn được ko
+    - Em muốn hẹn lịch PV
+    - Chọn được ngày phỏng vấn cho tiện được ko
+    - Em muốn chọn ngày pv được ko ạ
+    - Có thể đổi lịch phỏng vấn được không ?
+    - Tôi có thể dời lịch phỏng vấn?
+    - Phỏng vấn ngày khác được không?
+    - Tôi muốn đổi ngày phỏng vấn
+    - Dời ngày phỏng vấn được ko ạ
+    - Em muốn đổi sang ngày pv khác
+    - đổi lịch Pv được ko
+
+- intent: job_description
+  examples: |
+    - Đơn hàng cụ thể làm cái gì ?
+    - Công việc là gì ?
+    - Mô tả công việc là gì?
+    - Công việc làm những gì?
+    - Đơn hàng này sẽ làm những gì
+    - Công việc yêu cầu làm gì
+    - Đơn hàng cụ thể làm những gì
+
+- intent: job_location
+  examples: |
+    - Tên xí nghiệp là gì ?
+    - Nhà máy nằm ở đâu ?
+    - Địa chỉ cụ thể ở đâu ?
+    - Nhà máy ở đâu?
+    - Địa chỉ nhà máy ở đâu?
+    - Tôi sẽ làm ở đâu?
+    - Tên nhà máy là gì
+    - Bạn biết tên xí nghiệp ko
+
+- intent: job_process
+  examples: |
+    - Làm công đoạn nào ?
+    - Làm những công đoạn nào ?
+    - Vị trí này làm những công đoạn nào?
+    - Quy trình công việc này ra sao
+    - Quy trình chế biến ra sao
+    - em sẽ làm công đoạn nào
+    - Em làm những công đoạn nào của công việc
+
+- intent: out_of_scope
+  examples: |
+    - Joke
+    - Bạn biết ai là tổng thống mỹ ko?
+    - Bạn biết hát không?
+    - Tôi buồn quá
+    - ádkjádạldsj
+    - hôm qua tôi thấy ông kia đi học
+    - Nghe trên Facebook rồi nhưng phải sang Youtube nghe lại và comment.
+    - Hiền Hồ live quá tuyệt, Quân hát bản live này tình cảm quá chừng.
+    - Hay thực sự cả 2 bạn.
+
+- intent: overtime
+  examples: |
+    - Tăng ca nhiều không?
+    - Có tăng ca thường xuyên không
+    - Tăng ca mấy giờ một ngày?
+    - Tăng ca bao nhiêu giờ?
+    - Tăng ca bao nhiêu h một ngày
+    - Tăng ca mấy h một ngày
+    - Làm thêm được nhiêu giờ
+    - Làm tăng ca được bao nhiêu giờ
+    - có làm đêm không?
+    - Công ty có tăng ca không?
+    - Có OT ko
+    - Có làm ca đêm không?
+    - Có làm ca tối không?
+    - Có tăng ca không?
+    - Việc này có làm đêm không anh
+
+- intent: overtime_salary
+  examples: |
+    - Lương tăng ca tính thế nào ?
+    - Tăng ca được bao nhiêu tiền?
+    - Lương tăng ca bao nhiêu?
+    - Lương tăng ca được tính sao?
+    - Lương tăng ca như nào
+    - Tăng ca được tính lương thế nào
+    - Lương tăng ca tính sao
+    - Lương tăng ca bao nhiêu phần trăm
+    - Tăng ca tăng bao nhiêu phần trăm lương
+
+- intent: salary
+  examples: |
+    - Lương cơ bản bao nhiêu 1 giờ ?
+    - Lương tính thế nào anh/chị?
+    - Lương thế nào ạ?
+    - Lương bao nhiêu 1 giờ
+    - Lương bao nhiêu 1h
+    - Lương việc này bao nhiêu ạ
+    - Lương cao không anh
+    - Việc này lương ra sao
+    - Cho em hỏi về lương ạ
+    - Đơn hàng này lương tính sao
+
+- intent: thanks
+  examples: |
+    - cảm ơn nhiều
+    - cảm ơn nhé
+    - cảm ơn nha
+    - cảm ơn
+    - cảm ơn rất nhiều
+    - Cảm ơn bạn đã giúp đỡ
+    - Thank
+    - Thank you
+    - tks
+    - Thnaks
+
+- intent: travel_fee_support
+  examples: |
+    - Công ty có hỗ trợ phí đi lại không?
+    - Có được hỗ trợ phí đi lại ko?
+    - Có được hỗ trợ phí di chuyển không?
+    - Được hỗ trợ đi lại không
+    - Được hỗ trợ phí di chuyển ko
+    - Công ty hỗ trợ mình phí đi lại ko
+
+- intent: visa_change
+  examples: |
+    - TTS 1 năm có chuyển tokutei gino được không?
+    - Các nghề trong 1 ngành lên đặc định có đổi nhau được không? (ví dụ đang làm CBTP về thịt, chuyển sang CBTP làm rau, làm bánh)
+    - Em là thi sankyu xong thì chuyển tokutei ngay không vần đợi hết hợp đồng có được không ạ?
+    - Em là TTS ngành đóng gói thực phẩm được 1 năm, tháng 12 tới hết hạn HĐ em có thể chuyển visa hay thi tokutei để ở lại được không ạ
+
+- intent: visa_change_advise
+  examples: |
+    - Em là thực tập sinh sắp hết hạn, cần chuyển tokutei, tư vấn giúp em.
+    - Em cần tư vấn chuyển totukei
+    - Tư vấn chuyển totukei giúp em với ạ
+    - cần tư vấn về chuyển totukei
+    - Em cần hỗ trợ chuyển tokutei ạ
+    - Tư vấn giúp em chuyển tokutei với ạ
+

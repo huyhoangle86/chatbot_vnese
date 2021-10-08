@@ -1,0 +1,139 @@
+actions: []
+config:
+  store_entities_as_slots: true
+e2e_actions: []
+entities:
+- job_position
+- document_type
+- job_type
+forms: {}
+intents:
+- house_near_company
+- overtime_salary
+- greet
+- job_location
+- overtime
+- interview_pass
+- interview_process
+- fellow
+- application_doc_missing
+- thanks
+- deny
+- industry_change
+- affirm
+- dont_receive_intern_certificate
+- can_I_upgrade_visa
+- application_doc
+- house_move_fee_support
+- interview_schedule
+- house_price
+- job_process
+- goodbye
+- get_certificate
+- job_description
+- bot_challenge
+- company_change
+- house_rent
+- travel_fee_support
+- out_of_scope
+- visa_change_advise
+- visa_change
+- bounty
+- salary
+- certificate_missing
+- bounty_yn
+responses:
+  utter_application_doc:
+  - text: Những giấy tờ cần chuẩn bị (Chú ý chụp vuông góc, rõ nét và không cầm trên
+      tay khi chụp)
+  - text: Lý lịch gốc của TTS ( xin của NĐ ), thẻ ngoại kiều 2 mặt giấy thi tay nghề
+      hoặc chứng chỉ
+  - text: chuyên ngành, chứng chỉ tiếng nhật (nếu có), ảnh hộ chiếu (trang có chữ),
+  - text: ảnh cá nhân - chụp nghiêm túc để làm CV.
+  utter_application_doc_missing:
+  - text: Cần liên hệ với nghiệp đoàn, xí nghiệp nơi đang làm việc để yêu cầu các
+      giấy tờ cần thiết
+  utter_bot_challenge:
+  - text: Tôi là bot hỗ trợ việc làm
+  utter_bounty:
+  - text: thường thưởng 2 năm/lần mỗi lần 1 tháng lương tùy theo tình hình kinh doanh
+  utter_bounty_yn:
+  - text: Có thưởng và tăng lương
+  utter_can_I_upgrade_visa:
+  - text: Tùy vào các ngành nghề có thể lên được đặc định. Các bạn có thể thi chứng
+      chỉ ngành khác và làm trái ngành
+  utter_certificate_missing:
+  - text: bạn phải bổ sung chứng chỉ trong thời gian sớm nhất để có visa
+  utter_company_change:
+  - text: Chuyển được em nhé, thủ tục chuyển yêu cầu em có đầy đủ các giấy tờ như
+      trên
+  utter_dont_receive_intern_certificate:
+  - text: Em cần yêu cầu xí nghiệp và nghiệp đoàn cấp cho em, nếu không được cần báo
+      lên otit
+  utter_fellow:
+  - text: Các nhà máy hầu hết đã có senpai người Việt rồi, bạn có thể trao đổi khi
+      phòng vấn với xí nghiệp
+  utter_get_certificate:
+  - text: Em cần đăng ký thi chứng chỉ trên trang web của từng ngành để đăng ký dự
+      thi
+  utter_goodbye:
+  - text: Tạm biệt
+  - text: Bye bye
+  utter_greet:
+  - text: Chào anh/chị
+  - text: Chào bạn
+  - text: Xin chào
+  utter_house_move_fee_support:
+  - text: Thường sẽ không hỗ trợ nhưng vấn đề này bạn có thể trao đổi khi phỏng vấn
+      với Shien
+  utter_house_near_company:
+  - text: Nhà thường gần chỗ làm hoặc sẽ có hỗ trợ đi lại nếu cần đi bằng xe đạp và
+      tầu điện
+  utter_house_price:
+  - text: None
+  utter_house_rent:
+  - text: Nhà ở sẽ theo kiểu 2LDK, 3LDK, 2-3 người/nhà dùng chung bếp và phòng khách,
+      có thể 1-2 người/phòng
+  utter_iamabot:
+  - text: Tôi là bot hỗ trợ việc làm
+  utter_industry_change:
+  - text: Được em nhé, yêu cầu em có chứng chỉ ngành mà em muốn chuyển
+  utter_interview_pass:
+  - text: Đỗ phỏng vấn xong nộp đủ các giấy từ như khi chuẩn bị hồ sơ PV
+  utter_interview_process:
+  - text: Bạn sẽ có 2-3 vòng phỏng vấn là Mendan, Shien, và xí nghiệp.
+  - text: Có khoảng 2-3 vòng phỏng vấn bao gồm Mendan, Shien, và xí nghiệp.
+  utter_interview_schedule:
+  - text: Có thể hẹn lịch phỏng vấn nhưng hạn chế trường hợp này
+  utter_job_description:
+  - text: Công việc cụ thể đã ghi trong đơn hàng bao gồm:...
+  utter_job_location:
+  - text: Các thông tin này bạn có thể hỏi trong vòng phỏng vấn với xí nghiệp bạn
+      nhé
+  utter_job_process:
+  - text: Công đoạn tùy thuộc vào công việc cụ thể sẽ có các quy trình khác nhau
+  utter_out_of_scope:
+  - text: Xin lỗi, tôi không hiểu câu hỏi của bạn
+  utter_overtime:
+  - text: Tăng ca trung bình từ 20-40h
+  utter_overtime_salary:
+  - text: lương tăng ca 125% tính trên mức LCB
+  utter_salary:
+  - text: Lương cơ bản theo từng đơn sẽ có mức khác nhau
+  - text: Lương sẽ tính theo giờ làm việc và có các mức khác nhau. Khi làm tăng ca
+      sẽ có trả thêm tiền.
+  utter_thanks:
+  - text: Không có chi
+  - text: You are welcome :)
+  utter_travel_fee_support:
+  - text: Sẽ có hỗ trợ đi lại nếu cần thiết
+  utter_visa_change:
+  - text: Được bạn nhé
+  utter_visa_change_advise:
+  - text: Em đang là TTS ngành nào và có chứng chỉ ngành nào rồi ạ? Em muốn chuyển
+      trái ngành hay cùng ngành, Nguyện vọng của em muốn đi khu vực nào?
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+slots: {}
+version: '2.0'

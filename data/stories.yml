@@ -1,0 +1,122 @@
+stories:
+- steps:
+  - intent: application_doc
+  - action: utter_application_doc
+  story: application_doc
+- steps:
+  - intent: application_doc_missing
+  - action: utter_application_doc_missing
+  story: application_doc_missing
+- steps:
+  - intent: bounty_yn
+  - action: utter_bounty_yn
+  story: bounty_yn
+- steps:
+  - intent: bounty
+  - action: utter_bounty
+  story: bounty
+- steps:
+  - intent: can_I_upgrade_visa
+  - action: utter_can_I_upgrade_visa
+  story: can_I_upgrade_visa
+- steps:
+  - intent: company_change
+  - action: utter_company_change
+  story: company_change
+- steps:
+  - intent: fellow
+  - action: utter_fellow
+  story: fellow
+- steps:
+  - intent: house_near_company
+  - action: utter_house_near_company
+  story: house_near_company
+- steps:
+  - intent: house_rent
+  - action: utter_house_rent
+  story: house_rent
+- steps:
+  - intent: house_price
+  - action: utter_house_price
+  story: house_price
+- steps:
+  - intent: industry_change
+  - action: utter_industry_change
+  story: industry_change
+- steps:
+  - intent: house_move_fee_support
+  - action: utter_house_move_fee_support
+  story: house_move_fee_support
+- steps:
+  - intent: interview_pass
+  - action: utter_interview_pass
+  story: interview_pass
+- steps:
+  - intent: interview_process
+  - action: utter_interview_process
+  story: interview_process
+- steps:
+  - intent: interview_schedule
+  - action: utter_interview_schedule
+  story: interview_schedule
+- steps:
+  - intent: job_description
+  - action: utter_job_description
+  story: job_description
+- steps:
+  - intent: job_process
+  - action: utter_job_process
+  story: job_process
+- steps:
+  - intent: job_location
+  - action: utter_job_location
+  story: job_location
+- steps:
+  - intent: overtime
+  - action: utter_overtime
+  story: overtime
+- steps:
+  - intent: overtime_salary
+  - action: utter_overtime_salary
+  story: overtime_salary
+- steps:
+  - intent: salary
+  - action: utter_salary
+  story: salary
+- steps:
+  - intent: travel_fee_support
+  - action: utter_travel_fee_support
+  story: travel_fee_support
+- steps:
+  - intent: visa_change
+  - action: utter_visa_change
+  story: visa_change
+- steps:
+  - intent: visa_change_advise
+  - action: utter_visa_change_advise
+  story: visa_change_advise
+- steps:
+  - intent: dont_receive_intern_certificate
+  - action: utter_dont_receive_intern_certificate
+  story: dont_receive_intern_certificate
+- steps:
+  - intent: get_certificate
+  - action: utter_get_certificate
+  story: get_certificate
+- steps:
+  - intent: certificate_missing
+  - action: utter_certificate_missing
+  story: certificate_missing
+- steps:
+  - intent: greet
+  - action: utter_greet
+  story: greet
+- steps:
+  - intent: thanks
+  - action: utter_thanks
+  story: thanks
+- steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  story: out_of_scope
+version: '2.0'

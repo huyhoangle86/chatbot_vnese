@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+*.tar.gz
+.cache
+*.xlsx
+results
+train_test_split
+*.db*
